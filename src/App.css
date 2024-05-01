@@ -5,3 +5,11 @@
   padding: 2rem;
   text-align: center;
 }
+
+.readings-container {
+  display: flex;
+}
+
+.readings-container div {
+  flex: 1;
+}
