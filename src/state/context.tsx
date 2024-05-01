@@ -25,7 +25,9 @@ export const useDispatchContext = () => {
   return dispatch;
 };
 
-const appInitialState: AppState = {};
+const appInitialState: AppState = {
+  mode: 'JAP_ESP'
+};
 
 export const AppContextProvider = ({children}: PropsWithChildren) => {
   const [state, dispatch] = useReducer(appReducer, appInitialState);

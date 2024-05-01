@@ -1,5 +1,9 @@
 const ModeSelector = () => {
-  return <p>JAP - ESP</p>;
+  return (
+    <section>
+      <p>JAP - ESP</p>
+    </section>
+  );
 };
 
 export default ModeSelector;
