@@ -1,17 +1,28 @@
 import { useRef, useState } from 'react';
 
+import '../../App.css';
+
 const Meaning = ({value}: {value: string}) => {
   const [result, setResult] = useState('');
   const ref = useRef<HTMLInputElement>(null);
 
+  const correctValue = '✔';
+  const wrongValue = '✗';
+
   const showResult = () => {
-    setResult(value === (ref.current as HTMLInputElement).value ? '✔' : '✗')
+    setResult(value === (ref.current as HTMLInputElement).value ? correctValue : wrongValue)
   }
 
   return (<>
-    <input type="text" name="kanji-meaning" id="meaning-input" placeholder="SIGNIFICADO" ref={ref} />
-    <button type="button" onClick={showResult}>Check</button>
-    <span>{result}</span>
+    <div className="row">
+      <input type="text" name="kanji-meaning" id="meaning-input" placeholder="SIGNIFICADO" ref={ref} />
+    </div>
+    <div className="row">
+      <button className="bnt-check half" type="button" onClick={showResult}>
+        Check
+        <span className={`icon ${result === correctValue ? 'success' : 'error'}`}>{result}</span>
+      </button>
+    </div>
   </>);
 };
 

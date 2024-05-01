@@ -20,3 +20,60 @@ body {
   min-height: 100vh;
 }
 
+input {
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+
+input:focus {
+  border: none;
+  outline: rgb(255, 255, 150) auto 1px;
+}
+
+button {
+  height: 5vh;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Layout */
+.row {
+  height: 10vh;
+}
+
+/* Helpers */
+.icon {
+  padding-left: 15px
+}
+
+.success {
+  color: blue
+}
+
+.error {
+  color: red;
+}
+
+/* Buttons */
+.bnt-check {
+  color: #FFF;
+  font-weight: 600;
+  background-color: green;
+}
+
+.bnt-check:hover {
+  background-color: rgb(1, 92, 1);
+}
+
+.half {
+  width: 50%;
+}
+
+.full {
+  width: 100%;
+}

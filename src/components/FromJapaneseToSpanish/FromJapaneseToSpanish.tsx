@@ -6,7 +6,7 @@ const FromJapaneseToSpanish = () => {
   const data = Sensei.getRandomKanji();
 
   return <>
-    <p>{data.kanji}</p>
+    <h1>{data.kanji}</h1>
     <Meaning value={data.meanings[0]} />
     <Exercises />
     <button type="button">Siguiente Kanji</button>
