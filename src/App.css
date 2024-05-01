@@ -10,6 +10,6 @@
   display: flex;
 }
 
-.readings-container div {
+.readings-container div:not(div:last-child) {
   flex: 1;
 }
