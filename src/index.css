@@ -16,7 +16,7 @@
 body {
   margin: 0;
   display: flex;
-  min-width: 320px;
+  min-width: 410px;
   min-height: 100vh;
 }
 
@@ -76,4 +76,32 @@ button {
 
 .full {
   width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  border: 1px solid #CCC;
+}
+
+.btn-group div {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.btn-group div:hover {
+  background-color: #303030;
+}
+
+.btn-group div:first-child {
+  border-right: 1px solid #CCC;
+}
+
+.btn-group button {
+  background: none;
+  color: #CCC;
+  font-weight: 800;
+}
+
+.btn-group button:focus {
+  background-color: #000;
 }

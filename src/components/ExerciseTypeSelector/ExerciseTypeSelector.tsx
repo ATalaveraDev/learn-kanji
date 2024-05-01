@@ -4,9 +4,13 @@ type ExerciseTypeSelectorComponent = {
 
 const ExerciseTypeSelector = ({onChange}: ExerciseTypeSelectorComponent) => {  
   return (
-    <div>
-      <button onClick={() => onChange('READINGS')}>Lecturas</button>
-      <button onClick={() => onChange('VOCABULARY')}>Vocabulario</button>
+    <div className="btn-group">
+      <div>
+        <button className="full" onClick={() => onChange('READINGS')}>Lecturas</button>
+      </div>
+      <div>
+        <button className="full" onClick={() => onChange('VOCABULARY')}>Vocabulario</button>
+      </div>
     </div>
   );
 };
