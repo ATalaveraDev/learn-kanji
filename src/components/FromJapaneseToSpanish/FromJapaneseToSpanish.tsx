@@ -1,4 +1,4 @@
-import ExerciseTypeSelector from '../ExerciseTypeSelector/ExerciseTypeSelector';
+import Exercises from '../Exercises/Exercises';
 
 const FromJapaneseToSpanish = () => {
   return <>
@@ -7,8 +7,8 @@ const FromJapaneseToSpanish = () => {
     <button type="button">Check</button>
     <span>✔</span>
     <span>✗</span>
-    <ExerciseTypeSelector />
-    
+    <Exercises />
+    <button type="button">Siguiente Kanji</button>
   </>
 };
 
