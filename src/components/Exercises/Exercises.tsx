@@ -9,7 +9,7 @@ const Exercises = () => {
 
   return (
     <section>
-      <ExerciseTypeSelector onChange={(type: string) => setType(type)} />
+      <ExerciseTypeSelector onChange={(type: string) => setType(type)} activeOption={type} />
       { type === 'READINGS' ? <Readings /> : <Vocabulary /> }
     </section>
   );
