@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import './InputsList.css';
+
 type InputsListComponent = {
   title: string;
 };
@@ -16,7 +18,7 @@ const InputsList = ({title}: InputsListComponent) => {
   };
 
   return (
-    <div>
+    <div className="inputs-list-container">
       <h5>{title}</h5>
       {readings.map((input, index) => <input key={`${input.id}-${index}`} type="text" />)}
       <button type="button" onClick={addInput}>+</button>

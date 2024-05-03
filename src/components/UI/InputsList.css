@@ -1,0 +1,12 @@
+.inputs-list-container input {
+  margin: 5px 5px;
+  height: 20px;
+  display: block;
+}
+
+.inputs-list-container button {
+  background-color: cornflowerblue;
+  color: #FFF;
+  font-weight: 600;
+  width: 30px
+}
