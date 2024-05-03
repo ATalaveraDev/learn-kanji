@@ -43,7 +43,7 @@ button {
 
 /* Layout */
 .row {
-  height: 10vh;
+  min-height: 10vh;
 }
 
 /* Helpers */

@@ -8,6 +8,7 @@
 
 .readings-container {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .readings-container div:not(div:last-child) {
