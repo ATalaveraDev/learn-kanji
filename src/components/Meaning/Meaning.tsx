@@ -10,7 +10,7 @@ const Meaning = ({value}: {value: string}) => {
   const wrongValue = '✗';
 
   const showResult = () => {
-    setResult(value === (ref.current as HTMLInputElement).value ? correctValue : wrongValue)
+    setResult(value.toLowerCase() === (ref.current as HTMLInputElement).value.toLowerCase() ? correctValue : wrongValue)
   }
 
   return (<>
