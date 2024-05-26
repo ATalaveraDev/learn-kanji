@@ -17,10 +17,22 @@ const meta = {
 } satisfies Meta<typeof InputsList>;
 
 export default meta;
-type Story = StoryObj<typeof InputsList>;
+type Story = StoryObj<typeof meta>;
 
 export const List: Story = {
   args: {
-    title: 'Button',
+    title: 'My Title',
+  },
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/aQEhKIInQtcgywQuH4d5bE/Wireframe?type=design&node-id=0%3A1&mode=design&t=XkJAplSQZrXHsdxw-1'
+    }
+  }
+};
+
+export const List2: Story = {
+  args: {
+    title: 'My Title 222',
   },
 };
